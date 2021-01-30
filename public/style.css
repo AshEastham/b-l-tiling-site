@@ -32,7 +32,7 @@ header {
   height: auto;
 }
 
-.logo-phone-container {
+header .logo-phone-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,16 +44,16 @@ header {
           justify-content: space-between;
 }
 
-.logo-phone-container .logo {
+header .logo-phone-container .logo {
   border-radius: 15px;
 }
 
-.logo-phone-container aside {
+header .logo-phone-container aside {
   margin-top: 1.9em;
   text-align: right;
 }
 
-.logo-phone-container .phone {
+header .logo-phone-container .phone {
   padding: 0.6em;
   font-size: 1.4em;
   margin-top: 0.7em;
@@ -65,7 +65,7 @@ header {
   font-weight: 600;
 }
 
-.logo-phone-container .phone:hover {
+header .logo-phone-container .phone:hover {
   color: #b58f5a;
 }
 
@@ -102,8 +102,6 @@ nav li :hover {
   color: inherit;
   border-bottom: solid 5px #7e643f;
   padding-bottom: 0.55em;
-  -webkit-transition: ease-in-out .1s;
-  transition: ease-in-out .1s;
 }
 
 /* MAIN CONTENT */

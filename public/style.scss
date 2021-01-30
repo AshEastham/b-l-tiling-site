@@ -30,37 +30,37 @@ a {
 header {
     background-color: black;
     height: auto;
-}
 
-.logo-phone-container {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-
-    .logo {
-        border-radius: 15px;
-    }
-
-    aside {
-        margin-top: 1.9em;
-        text-align: right;
-    }
+    .logo-phone-container {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
     
-    .phone {
-        padding: 0.6em;
-        font-size: 1.4em;
-        margin-top: 0.7em;
-        border: dashed 1px white;
-        border-radius: 0.9em;
-        margin-right: 0.4em;
-        font-family: 'Cabin', sans-serif;
-        color: white;
-        font-weight: 600;
-    }
+        .logo {
+            border-radius: 15px;
+        }
     
-    .phone:hover {
-        color: #b58f5a;
-    }    
+        aside {
+            margin-top: 1.9em;
+            text-align: right;
+        }
+        
+        .phone {
+            padding: 0.6em;
+            font-size: 1.4em;
+            margin-top: 0.7em;
+            border: dashed 1px white;
+            border-radius: 0.9em;
+            margin-right: 0.4em;
+            font-family: 'Cabin', sans-serif;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .phone:hover {
+            color: #b58f5a;
+        }    
+    }
 }
 
 nav {
@@ -87,7 +87,6 @@ nav {
             color: inherit;
             border-bottom: solid 5px #7e643f;
             padding-bottom: 0.55em;
-            transition: ease-in-out .1s;
         }
     }
 }
