@@ -74,6 +74,7 @@ nav {
     background-color: $base-color;
     height: 3em;
     padding-top: 0.2em;
+    font-size: 1.2em;
 
     ul {
         display: inline-flex;
@@ -91,7 +92,7 @@ nav {
         :hover {
             color: inherit;
             border-bottom: solid 5px $base-darker;
-            padding-bottom: 0.55em;
+            padding-bottom: 0.6em;
         }
     }
 }
@@ -104,6 +105,7 @@ main {
 
 
 /* MEDIA QUERIES */
+/* HEADER FIXES */
 @media screen and (max-width: 1400px) {
     header {
         .logo-phone-container {
@@ -111,8 +113,37 @@ main {
                 margin-top: 2.2em;
             }
             .phone {
-                font-size: 1.1em;
-                padding: 0.4em;
+                font-size: 1.2em;
+                padding: 0.6em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 25em;
+    }
+
+    header {
+        .logo-phone-container {
+            aside {
+                margin-top: 1.8em;
+            }
+            .phone {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        .logo-phone-container {
+            aside {
+                margin-top: 0;
+                margin-bottom: 1em;
+                text-align: left;
             }
         }
     }

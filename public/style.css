@@ -82,6 +82,7 @@ nav {
   background-color: #b58f5a;
   height: 3em;
   padding-top: 0.2em;
+  font-size: 1.2em;
 }
 
 nav ul {
@@ -103,7 +104,7 @@ nav li {
 nav li :hover {
   color: inherit;
   border-bottom: solid 5px #7e643f;
-  padding-bottom: 0.55em;
+  padding-bottom: 0.6em;
 }
 
 /* MAIN CONTENT */
@@ -113,13 +114,34 @@ main {
 }
 
 /* MEDIA QUERIES */
+/* HEADER FIXES */
 @media screen and (max-width: 1400px) {
   header .logo-phone-container aside {
     margin-top: 2.2em;
   }
   header .logo-phone-container .phone {
-    font-size: 1.1em;
-    padding: 0.4em;
+    font-size: 1.2em;
+    padding: 0.6em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    width: 25em;
+  }
+  header .logo-phone-container aside {
+    margin-top: 1.8em;
+  }
+  header .logo-phone-container .phone {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .logo-phone-container aside {
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
