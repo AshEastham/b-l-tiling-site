@@ -58,7 +58,7 @@ header .logo-phone-container .phone {
   font-size: 1.4em;
   margin-top: 0.7em;
   border: solid 1px white;
-  border-radius: 0.9em;
+  border-radius: 1.8em;
   margin-right: 0.4em;
   font-family: 'Cabin', sans-serif;
   color: white;
@@ -82,7 +82,7 @@ nav {
   background-color: #b58f5a;
   height: 3em;
   padding-top: 0.2em;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 nav ul {
@@ -99,6 +99,8 @@ nav li {
   color: white;
   font-weight: 600;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 nav li :hover {
