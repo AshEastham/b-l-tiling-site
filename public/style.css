@@ -73,6 +73,7 @@ header .logo-phone-container .phone:hover {
 }
 
 nav {
+  font-family: 'Cabin', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,8 +83,9 @@ nav {
           flex-direction: row;
   background-color: #b58f5a;
   height: 3em;
-  padding-top: 0.2em;
+  padding-top: 0.3em;
   font-size: 1em;
+  z-index: 1;
 }
 
 nav ul {
@@ -100,12 +102,17 @@ nav li {
   color: white;
   font-weight: 600;
   margin: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.1em;
 }
 
 nav li :hover {
   color: inherit;
+  border-bottom: solid 5px #7e643f;
+  padding-bottom: 0.6em;
+}
+
+.active {
   border-bottom: solid 5px #7e643f;
   padding-bottom: 0.6em;
 }
@@ -122,6 +129,11 @@ nav li :hover {
 main {
   background-color: white;
   height: 50em;
+}
+
+.landing {
+  background-image: url("assets/images/tiles.jpg");
+  height: 100vh;
 }
 
 /* MEDIA QUERIES */
@@ -178,6 +190,10 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    position: absolute;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill;
     z-index: 1;
   }
   nav ul {
@@ -192,6 +208,7 @@ main {
     margin-top: 0.4em;
     border-radius: 0.7em;
     padding-top: 3em;
+    padding-bottom: 3em;
   }
   nav ul li {
     border-bottom: solid 1px #b58f5a;
@@ -202,12 +219,17 @@ main {
   nav ul li:nth-child(1) {
     border-top: solid 1px #b58f5a;
   }
+  nav .active {
+    border-bottom: none;
+    background-color: #b58f5a;
+    padding: 0.6em 20%;
+  }
   nav #close-btn {
     text-align: center;
     border: solid 1px #7e643f;
     border-radius: 0.25em;
     padding: 0.5em;
-    margin-top: 0.25em;
+    margin-top: 0.15em;
     color: white;
   }
   nav #open-btn {
@@ -215,13 +237,16 @@ main {
     border: solid 1px #7e643f;
     border-radius: 0.25em;
     padding: 0.5em;
-    margin-top: 0.25em;
+    margin-top: 0.15em;
     color: white;
   }
   nav .nav-button-container {
     text-align: center;
     width: 2em;
     margin-left: 45%;
+  }
+  main {
+    margin-top: 3em;
   }
 }
 
