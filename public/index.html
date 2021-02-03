@@ -19,14 +19,12 @@
         <div class="row logo-phone-container">
           <div class="col-lg-4 col-sm-12">
             <a href="#">
-              <div>
-                <img class="logo" src="assets/images/logo.png" alt="baxter-lancaster-logo-image-responsive">
-              </div>
+              <img class="logo" src="assets/images/logo.png" alt="baxter-lancaster-logo-image-responsive">
             </a>
           </div>
           <div class="col-lg-8 col-sm-12">
             <aside>
-                <a href="tel:07837248779" class="phone"><i class="fas fa-phone-alt"></i> Call Mike: 07837 248 779</a>
+                <a href="tel:07837248779" class="phone"><i class="fas fa-phone-alt"></i> Mike: 07837 248 779</a>
                 <a href="tel:07340822831" class="phone"><i class="fas fa-phone-alt"></i> Neil: 07340 822 831</a>
             </aside>
           </div>
@@ -35,7 +33,11 @@
     
     <nav>
       <div class="container">
-        <ul>
+        <div class="nav-button-container">
+          <i class="fas fa-bars open-btn" id="open-btn" onclick="openNav()"></i>
+          <i class="fas fa-times close-btn" id="close-btn" onclick="closeNav()"></i>
+        </div>
+        <ul id="nav">
           <li><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Portfolio</a></li>
@@ -45,13 +47,15 @@
     </nav>
   </header>
 
-  <div class="container">
-    <main>
-        <h1></h1>
-    </main>
-  </div>
+  <main>
+    <div class="container">
+      <h1></h1>
+    </div>
+  </main>
 
   <footer>
   </footer>
+
+  <script src="assets/js/mobile-nav.js"></script>
 </body>
 </html>

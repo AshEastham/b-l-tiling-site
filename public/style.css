@@ -1,3 +1,4 @@
+/* SASS VARIABLES */
 /* GLOBAL STYLES */
 * {
   margin: 0;
@@ -109,6 +110,14 @@ nav li :hover {
   padding-bottom: 0.6em;
 }
 
+.open-btn {
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+
 /* MAIN CONTENT */
 main {
   background-color: white;
@@ -144,6 +153,101 @@ main {
     margin-top: 0;
     margin-bottom: 1em;
     text-align: left;
+  }
+}
+
+/* PHONE MEDIA QUERIES */
+@media screen and (max-width: 425px) {
+  .logo {
+    width: 21em;
+  }
+  header .logo-phone-container {
+    text-align: center;
+  }
+  header .logo-phone-container aside {
+    margin-top: 0em;
+    text-align: center;
+  }
+  header .logo-phone-container .phone {
+    font-size: 0.8em;
+    padding: 0.4em;
+  }
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    z-index: 1;
+  }
+  nav ul {
+    height: 0%;
+    width: 0%;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #7e643f;
+    margin-top: 0.4em;
+    border-radius: 0.7em;
+    padding-top: 3em;
+  }
+  nav ul li {
+    border-bottom: solid 1px #b58f5a;
+  }
+  nav ul li :hover {
+    border-bottom: none;
+  }
+  nav ul li:nth-child(1) {
+    border-top: solid 1px #b58f5a;
+  }
+  nav #close-btn {
+    text-align: center;
+    border: solid 1px #7e643f;
+    border-radius: 0.25em;
+    padding: 0.5em;
+    margin-top: 0.25em;
+    color: white;
+  }
+  nav #open-btn {
+    display: block;
+    border: solid 1px #7e643f;
+    border-radius: 0.25em;
+    padding: 0.5em;
+    margin-top: 0.25em;
+    color: white;
+  }
+  nav .nav-button-container {
+    text-align: center;
+    width: 2em;
+    margin-left: 45%;
+  }
+}
+
+/* SMALL PHONE */
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 19em;
+  }
+  header .logo-phone-container aside {
+    margin-top: 0em;
+    text-align: center;
+  }
+  header .logo-phone-container .phone {
+    font-size: 0.75em;
+    padding: 0.3em;
+  }
+}
+
+/* GALAXY FOLD FIX */
+@media screen and (max-width: 280px) {
+  .logo {
+    width: 16em;
+  }
+  header .logo-phone-container .phone {
+    font-size: 0.65em;
+    padding: 0.4em;
   }
 }
 /*# sourceMappingURL=style.css.map */
