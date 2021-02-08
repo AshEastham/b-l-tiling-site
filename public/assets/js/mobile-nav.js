@@ -1,7 +1,7 @@
 /* Open */
 function openNav() {
     document.getElementById("nav").style.display = "flex";
-    document.getElementById("nav").style.height = "100%";
+    document.getElementById("nav").style.height = "auto";
     document.getElementById("nav").style.width = "100%";
     document.getElementById("open-btn").style.display = "none";
     document.getElementById("close-btn").style.display = "flex";
