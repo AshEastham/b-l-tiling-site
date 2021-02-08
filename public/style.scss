@@ -13,7 +13,7 @@ $base-darker: #7e643f;
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
 a {
@@ -34,6 +34,7 @@ a {
 header {
     background-color: #282B28;
     height: auto;
+    border-top: solid 2px $base-color;
 
     .logo-phone-container {
         display: flex;
@@ -78,7 +79,8 @@ nav {
     padding-top: 0.3em;
     font-size: 1em;
     z-index: 1;
-    text-align: left;
+    text-align: center;
+    border-bottom: solid 2px $base-darker;
 
     ul {
         display: inline-flex;
@@ -118,14 +120,98 @@ nav {
 
 /* MAIN CONTENT */
 main {
-    background-color: white;
-    height: 50em;
+    background-color: #f1f1f1;
+    height: auto;
+
+    h1 {
+        font-family: 'Cabin', sans-serif;
+        padding: 0.6em 0;
+        font-weight: 600;
+        margin-bottom: 0;
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+        text-align: left;
+    }
 }
 
-.landing {
-    background-image: url('assets/images/tiles.jpg');
-    height: 100vh;
+.page-landing {
+    height: auto;
+    max-height: 30em;
 }
+
+.feature-image {
+    img {
+        border-radius: 1em;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        width: fill;
+    }
+}
+
+.image-description {
+    background-color: $base-color;
+    border-radius: 1em;
+    color: white;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+
+    p {
+        padding: 1em;
+        margin: 0;
+    }
+
+    a {
+        margin: 1em 1em;
+        background-color: $base-darker;
+        border-color: $base-darker;
+        color: white
+    }
+}
+
+/* GALLERY */
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .gallery-column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+  
+  .gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .gallery-column video {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .gallery-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .gallery-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
 /* MEDIA QUERIES */
 /* HEADER FIXES */
