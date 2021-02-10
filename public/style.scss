@@ -147,6 +147,7 @@ main {
         border-radius: 1em;
         margin-bottom: 0.5em;
         margin-top: 0.5em;
+        max-height: 23em;
         width: fill;
     }
 }
@@ -157,6 +158,7 @@ main {
     color: white;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
+    max-height: 23em;
 
     p {
         padding: 1em;
@@ -250,6 +252,12 @@ main {
 
         li {
             padding: 0.4em;
+        }
+    }
+
+    .image-description {
+        p {
+            padding: 0.45em;
         }
     }
 }
@@ -365,8 +373,9 @@ main {
                 text-align: center;
             }
             .phone {
-                font-size: 0.8em;
-                padding: 0.4em;
+                font-size: 0.9em;
+                padding: 0.3em;
+                margin: 0;
             }
         }
     }    
@@ -406,7 +415,7 @@ main {
         .active {
             border-bottom: none;
             background-color: $base-color;
-            padding: 0.6em 20%;
+            padding: 0.45em 20%;
         }
 
         #close-btn {
@@ -435,6 +444,10 @@ main {
 
     main {
         margin-top: 2.4em;
+
+        h1 {
+            font-size: 2.5em;
+        }
     }
 }
 
