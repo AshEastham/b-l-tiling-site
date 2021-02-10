@@ -386,7 +386,7 @@ main {
         position: absolute;
         width: fill;
         z-index: 1;
-        font-size: 0.8em;
+        font-size: 1em;
 
         ul {
             height: 0%;
@@ -415,7 +415,7 @@ main {
         .active {
             border-bottom: none;
             background-color: $base-color;
-            padding: 0.45em 20%;
+            padding: 0.5em 20%;
         }
 
         #close-btn {

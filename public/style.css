@@ -384,7 +384,7 @@ main p {
     width: -moz-available;
     width: fill;
     z-index: 1;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   nav ul {
     height: 0%;
@@ -412,7 +412,7 @@ main p {
   nav .active {
     border-bottom: none;
     background-color: #b58f5a;
-    padding: 0.45em 20%;
+    padding: 0.5em 20%;
   }
   nav #close-btn {
     text-align: center;
