@@ -185,18 +185,18 @@ main {
     flex: 33%;
     max-width: 33%;
     padding: 0 4px;
-  }
-  
-  .gallery-column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
 
-  .gallery-column video {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+    img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    video {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
