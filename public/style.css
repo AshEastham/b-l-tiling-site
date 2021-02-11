@@ -149,7 +149,6 @@ main p {
 
 .page-landing {
   height: auto;
-  max-height: 30em;
 }
 
 .feature-image img {
@@ -181,6 +180,41 @@ main p {
   background-color: #7e643f;
   border-color: #7e643f;
   color: white;
+}
+
+.video-section {
+  text-align: center;
+  margin: 1em 0;
+  border-top: dashed 1px #7e643f;
+  border-bottom: dashed 1px #7e643f;
+  background-color: #f7f7f7;
+}
+
+.video-section h2 {
+  padding: 0.5em 0.8em 0.8em 0.8em;
+}
+
+.video-section video {
+  margin-bottom: 1em;
+}
+
+.icon-card {
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.icon-card .card-icon {
+  color: #b58f5a;
+  font-size: 3.5em;
+}
+
+.icon-card h2 {
+  padding: 0.4em;
+}
+
+.icon-card p {
+  font-size: 1.1em;
+  text-align: center;
 }
 
 /* GALLERY */
@@ -353,6 +387,9 @@ main p {
     text-align: center;
     width: 2em;
     margin-left: 48%;
+  }
+  main {
+    margin-top: 1.8em;
   }
 }
 
