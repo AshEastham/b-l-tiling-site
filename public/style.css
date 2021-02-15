@@ -278,7 +278,7 @@ main p {
 footer {
   background-color: #2e2e2e;
   color: #9c9c9c;
-  border-top: solid 2px #585858;
+  border-top: solid 2px #b58f5a;
 }
 
 footer ul {
@@ -296,7 +296,7 @@ footer #logo-footer :hover {
 }
 
 footer #logo-footer .logo-footer {
-  height: 4.75em;
+  height: 4.5em;
 }
 
 footer .col-lg-6 {
@@ -346,6 +346,10 @@ footer .footer-right li a:hover {
 .btt:hover {
   color: #7e643f;
   /* Add a dark-grey background on hover */
+}
+
+.not-found {
+  height: 7em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -485,6 +489,20 @@ footer .footer-right li a:hover {
   main {
     margin-top: 1.8em;
   }
+  footer {
+    padding-bottom: 3em;
+    padding-left: 1em;
+  }
+  footer ul {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  footer #logo-footer {
+    margin-bottom: 0;
+  }
+  footer .footer-right {
+    margin-top: 2em;
+  }
 }
 
 /* PHONE MEDIA QUERIES */
@@ -597,6 +615,9 @@ footer .footer-right li a:hover {
     font-size: 0.75em;
     padding: 0.3em;
   }
+  footer #logo-footer .logo-footer {
+    height: 3.3em;
+  }
 }
 
 /* GALAXY FOLD FIX */
@@ -607,6 +628,9 @@ footer .footer-right li a:hover {
   header .logo-phone-container .phone {
     font-size: 0.65em;
     padding: 0.4em;
+  }
+  footer #logo-footer .logo-footer {
+    height: 3.3em;
   }
 }
 /*# sourceMappingURL=style.css.map */
