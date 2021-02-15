@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .clear {
@@ -48,6 +49,10 @@ header .logo-phone-container {
 
 header .logo-phone-container .logo {
   border-radius: 15px;
+}
+
+header .logo-phone-container .logo :hover {
+  opacity: 0.9;
 }
 
 header .logo-phone-container aside {
@@ -187,6 +192,7 @@ main p {
   margin: 1em 0;
   border-top: dashed 1px #7e643f;
   border-bottom: dashed 1px #7e643f;
+  border-radius: 1em;
   background-color: #f7f7f7;
 }
 
@@ -265,6 +271,91 @@ main p {
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #2e2e2e;
+  color: #9c9c9c;
+  border-top: solid 2px #585858;
+}
+
+footer ul {
+  list-style-type: none;
+  text-decoration: none;
+  padding-bottom: 4em;
+}
+
+footer #logo-footer {
+  margin-bottom: 2em;
+}
+
+footer #logo-footer :hover {
+  opacity: 0.9;
+}
+
+footer #logo-footer .logo-footer {
+  height: 4.75em;
+}
+
+footer .col-lg-6 {
+  padding-left: 0;
+}
+
+footer .footer-top {
+  padding-top: 3em;
+}
+
+footer .footer-right {
+  margin-top: 5.9em;
+}
+
+footer .footer-right li {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  color: white;
+}
+
+footer .footer-right li a:hover {
+  color: white;
+  background-color: #7e643f;
+}
+
+/* BACK TO TOP BUTTON */
+#btt {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  outline: none;
+  /* Remove outline */
+  color: #b58f5a;
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  font-size: 3em;
+  /* Increase font size */
+}
+
+.btt:hover {
+  color: #7e643f;
+  /* Add a dark-grey background on hover */
+}
+
+@media screen and (max-width: 1200px) {
+  footer ul {
+    padding-top: 0;
+  }
+  .footer-right {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -388,6 +479,9 @@ main p {
     width: 2em;
     margin-left: 48%;
   }
+  #myCarousel h4 {
+    padding-top: 1.5em;
+  }
   main {
     margin-top: 1.8em;
   }
@@ -470,6 +564,17 @@ main p {
     text-align: center;
     width: 2em;
     margin-left: 45%;
+  }
+  #myCarousel {
+    height: auto;
+  }
+  #myCarousel h4 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  #myCarousel p {
+    font-size: 16px;
   }
   main {
     margin-top: 2.4em;
