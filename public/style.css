@@ -618,6 +618,9 @@ footer .footer-right li a:hover {
   footer #logo-footer .logo-footer {
     height: 3.3em;
   }
+  video {
+    width: 280px;
+  }
 }
 
 /* GALAXY FOLD FIX */
@@ -631,6 +634,9 @@ footer .footer-right li a:hover {
   }
   footer #logo-footer .logo-footer {
     height: 3.3em;
+  }
+  video {
+    width: 240px;
   }
 }
 /*# sourceMappingURL=style.css.map */
